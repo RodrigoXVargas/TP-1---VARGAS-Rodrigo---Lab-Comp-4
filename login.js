@@ -9,7 +9,7 @@ function login() {
         .then(response => response.json())
         .then(data => {
             if(data.respuesta == "ERROR") alert(data.mje);
-            else {alert(data.mje); location.href = 'http://127.0.0.1:5500/lista.html';}
+            else {alert(data.mje); location.href = 'http://127.0.0.1:5500/TP-1---VARGAS-Rodrigo---Lab-Comp-4/lista.html';}
         })
         .catch(error => alert(error));
 };
