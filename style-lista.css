@@ -1,0 +1,83 @@
+* {
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+	
+	background-color: #aaa;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	padding-bottom: 20px;
+}
+
+.container__search {
+	grid-column: 2 / span 1;
+	justify-self: center;
+}
+
+.allRecords {
+	justify-self: end;
+}
+
+.div-table {
+	position: relative;
+	display: grid;
+	place-items: center;
+	
+}
+
+table {
+	
+	background-color: #fff;
+	width: 100%;
+}
+
+th {
+	background-color: #333;
+	color: #fff;
+	border: 1px solid #FFF;
+	text-align: center;
+	padding: 5px 0px;
+	margin: 0px;
+	min-width: 150px;
+	max-width: 150px;
+}
+
+td {
+	text-align: center;
+}
+
+.bloqueado {
+	background-color: rgb(217, 51, 51);
+}
+
+.bloqueado button {
+	background-color: rgb(217, 51, 51);
+	border: 0px; 
+	cursor: pointer;
+}
+
+.bloqueado button img {
+	height: 50px;
+	width: 50px;
+	background-color: rgb(217, 51, 51);
+}
+
+.desbloqueado {
+	background-color: rgb(28, 163, 77);
+}
+
+.desbloqueado button {
+	background-color: rgb(28, 163, 77);
+	border: 0px; 
+	cursor: pointer;
+}
+
+.desbloqueado button img {
+	height: 50px;
+	width: 50px;
+	background-color: rgb(28, 163, 77);
+}

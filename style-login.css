@@ -1,0 +1,89 @@
+* {
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+	margin: 0px;
+}
+
+.login {
+	background-color: #bbb;
+	height: 100vh;
+	width: 100%;
+	display: grid;
+	place-items: center;
+}
+
+.login-form {
+	padding: 20px 5px;
+	background-color: #fff;
+	width: 200px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 8px;
+}
+
+form div {
+	margin: 5px;
+	border: 1px solid #000;
+	border-radius: 6px;
+	height: 35px;
+}
+
+div label {
+	color: rgb(121, 120, 120);
+	position: absolute;
+	padding: 5px;
+	
+}
+
+div input {
+	padding: 7px 0px 7px 7px;
+	position: relative;
+	width: 95%;
+	border: 0px;
+	
+}
+
+div input:required {
+	background-color: #fff;
+}
+
+div input:required:invalid {
+	background-color: transparent;
+}
+
+div input:focus {
+	padding: 0px 0px 0px 5px;
+	width: 95%;
+	border: 0px;
+	outline: 0px;
+	margin: 0px;
+	margin-top: 25px;
+}
+
+form div:focus-within {
+	transition: all;
+	transition: 1s;
+	height: 50px;
+}
+
+.login-form__container1:focus-within .login-form__label1{
+	transition: all;
+	transition: 1s;
+	color: #000;
+}
+
+.login-form__container2:focus-within .login-form__label2{
+	transition: all;
+	transition: 1s;
+	color: #000;
+}
+
+.login-form button {
+	margin: 20px 0px;
+}
+
+
